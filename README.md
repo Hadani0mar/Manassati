@@ -1,12 +1,54 @@
-# React + Vite
+# 🏛️ منصتي | Manassati
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+منصة حكومية رقمية تهدف إلى تسهيل تقديم الخدمات للمواطنين والمقيمين، من خلال واجهة بسيطة وسريعة وآمنة.  
+يمكنك من خلال "منصتي" التقديم على مختلف الخدمات مثل إصدار أو تجديد الوثائق الرسمية، ومتابعة حالة الطلبات في أي وقت.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Manassati** is a digital e-government platform designed to simplify access to official services for both citizens and residents.  
+Users can easily submit requests for official documents and track their status through a clean and modern interface.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ الميزات الرئيسية | Key Features
+
+- ✅ تقديم خدمات إلكترونية مثل:
+  - إصدار شهادة ميلاد حديثة  
+    *Issue a new birth certificate*
+  - إصدار شهادة إقامة  
+    *Request a new residency certificate*
+  - إصدار أو تجديد جواز سفر  
+    *Issue or renew a passport*
+  - استخراج أو تجديد رخصة القيادة  
+    *Obtain or renew a driving license*
+  - إجراء عقود نقل ملكية المركبة والتوكيلات  
+    *Handle vehicle ownership transfers and authorizations*
+  - إصدار أو تجديد تأمين المركبة  
+    *Vehicle insurance management*
+
+- 🔎 تتبع الطلبات بسهولة من قسم "طلباتي"  
+  *Track your application status anytime.*
+
+- 🎨 تصميم عصري ومتجاوب  
+  *Modern, mobile-friendly responsive design.*
+
+- 🌓 دعم الوضع الداكن والفاتح  
+  *Supports both dark and light modes.*
+
+---
+
+## 🛠️ التقنيات المستخدمة | Technologies Used
+
+- ⚛️ React
+- ⚡ Vite
+- 🎨 Tailwind CSS + DaisyUI
+- 💡 Flowbite
+- 🧠 Lucide React Icons
+
+---
+
+## 🚀 طريقة التشغيل | Getting Started
+
+```bash
+pnpm install
+pnpm run dev
