@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ar" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>موقع الخدمات الرقمية</title>
+
+    <!-- ✅ شريط التبويبة (Navigation Bar) حسب وضع المستخدم -->
+    <meta name="theme-color" content="#0f172a" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#f8fafc" media="(prefers-color-scheme: light)">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <script>
+      // ✅ تفعيل الوضع الداكن بناءً على تفضيل المستخدم أو النظام
+      const userTheme = localStorage.theme;
+      const systemPrefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      if (userTheme === "dark" || (!userTheme && systemPrefersDark)) {
+        document.documentElement.classList.add("dark");
+        document.documentElement.setAttribute("data-theme", "dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+        document.documentElement.setAttribute("data-theme", "light");
+      }
+    </script>
+  </head>
+
+  <body class="bg-base-100 text-base-content transition-colors duration-300 font-sans">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

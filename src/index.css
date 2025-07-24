@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* تأثير الخلفية المتدرجة الثابتة بنفس ألوان الصورة */
+body {
+  background: linear-gradient(
+    to bottom,
+    #000000 0%,           /* أسود في الأعلى */
+    #1a1a1a 20%,          /* رمادي داكن جداً */
+    #d4d4d8 45%,          /* رمادي فاتح */
+    #f4f4f5 50%,          /* أبيض مائل للرمادي الفاتح */
+    #d4d4d8 55%,          /* رمادي فاتح */
+    #1a1a1a 80%,          /* رمادي داكن جداً */
+    #000000 100%          /* أسود في الأسفل */
+  );
+  min-height: 100vh;
+  background-attachment: fixed;
+  color: #ffffff;
+  transition-colors: none;
+}
+
+/* يمنع السكرول */
+.no-scroll {
+  overflow: hidden;
+  height: 100vh;
+}
+
+/* تأثيرات للنصوص حسب موقعها على الخلفية */
+.text-on-dark {
+  color: #ffffff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.text-on-light {
+  color: #1a1a1a;
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.3);
+}
+
+/* ضبط root div */
+#root {
+  min-height: 100vh;
+  position: relative;
+}
+
